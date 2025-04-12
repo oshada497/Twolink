@@ -5,16 +5,14 @@
 </head>
 <body>
 
-<button onclick="openTwoPages()">Open Both TikTok and YouTube Content</button>
+<h1>Opening Two Pages Automatically</h1>
+<p>This page will automatically open two other webpages.</p>
 
 <script>
-function openTwoPages() {
-  window.open('https://vt.tiktok.com/ZSrHfyNPK/', '_blank');
-  window.open('https://youtube.com/@bb_brainboost?si=2_k0zVyls0bapEX1', '_blank');
-}
-
-// You could also make it happen on page load if desired:
-// window.onload = openTwoPages;
+  window.onload = function() {
+    window.open('https://vt.tiktok.com/ZSrHfyNPK/', '_blank');
+    window.open('https://youtube.com/@bb_brainboost?si=2_k0zVyls0bapEX1', '_blank');
+  };
 </script>
 
 </body>
